@@ -223,3 +223,30 @@ button:hover {
     position: relative;
 }
 
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.menu-btn__burger::before {
+    top: -8px;
+}
+
+.menu-btn__burger::after {
+    top: 8px;
+}
+
+.menu-btn.active .menu-btn__burger {
+    background-color: transparent; 
+}
+
+.menu-btn.active .menu-btn__burger::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.active .menu-btn__burger::after {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: yellow;
+}

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const menuBtn = document.getElementById('menu-btn');
-  const navMenu = document.getElementById('nav-menu'); // Assuming your menu has this ID
+  const navMenu = document.getElementById('menu-btn'); 
 
   menuBtn.addEventListener('click', function() {
     this.classList.toggle('active');
-    navMenu.classList.toggle('show'); // Toggle the visibility of the menu
+    navMenu.classList.toggle('show'); 
   });
 });
