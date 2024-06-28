@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #2e220a;
+    background-color: fff(40 4% 82%);
     color: #333;
     line-height: 1.6;
 }
@@ -43,16 +43,17 @@ nav {
 }
 
 a:hover {
-    color: blueviolet;
+    color: #B4934C;
 }
 
 nav a {
-    color: tomato;
+    color: aliceblue;
     text-decoration: none;
 }
 nav img {
     width: 225px;
     height: 225px;
+    margin-top: 43px;
 }
 .nav-links {
     display: flex;
@@ -60,3 +61,34 @@ nav img {
     align-items: center;
     width: 100%;
 }
+
+.stars {
+    height: 55%;
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1000;
+    margin-top: 50px;
+}
+
+.stars i {
+    color: rgba(247, 240, 240, 0.671);
+    font-size: 24px; 
+}
+
+.heading {
+    color: white;
+    letter-spacing: 12px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    text-align: center;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
