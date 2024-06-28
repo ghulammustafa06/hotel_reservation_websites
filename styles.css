@@ -142,3 +142,53 @@ button {
 button:hover {
     background-color: #c08c2a;
 }
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 4rem; 
+    }
+    nav img {
+        width: 150px; 
+        height: 150px;
+        margin-top: 20px;
+    }
+    .nav-links {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .nav-links a {
+        margin: 2px 0;     }
+    .heading {
+        font-size: 3rem; 
+    }
+    .form-container {
+        flex-direction: column; 
+        padding: 20px;
+    }
+    form {
+        flex-direction: column;
+    }
+    .form-group {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 01 2rem; 
+        flex-direction: row;
+    }
+    .stars i {
+    display: none;
+    }
+    .heading {
+        font-size: 1rem; 
+        letter-spacing: 6px; 
+    }
+    button, input[type="date"], select {
+        padding: 12px; 
+        font-size: 11px; 
+    }
+}
