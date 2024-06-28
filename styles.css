@@ -184,11 +184,42 @@ button:hover {
     display: none;
     }
     .heading {
-        font-size: 1rem; 
-        letter-spacing: 6px; 
+        font-size: 1.3rem; 
+        padding-left: 20px;
+        letter-spacing: 7px; 
+        text-align: center;
     }
     button, input[type="date"], select {
         padding: 12px; 
         font-size: 11px; 
     }
 }
+
+#nav-menu {
+    display: none; 
+    color: wheat;
+    background-color: #88a812;
+}
+
+#nav-menu.show {
+    display: block; 
+}
+
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn__burger,
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
