@@ -9,6 +9,8 @@
 </head>
 <body>
     
+    <!-- // First Page Start Here -->
+
     <!-- Navigation Start Here-->
     <section class="main" style="background-image: url(Assets/Images/background-img.jpg);">
         <nav class="navbar" id="navbar">
@@ -34,6 +36,38 @@
             <i class="fas fa-star"></i>
             <h1 class="heading">ENJOY THE BEST <br> MOMENTS OF LIFE</h1>
         </div>
+
+        <!-- Booking Form -->
+        <div class="form-container">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="arrival">Arrival</label>
+                    <input type="date" id="arrival" name="arrival" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <select id="adults" name="adults" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">Children</label>
+                    <select id="children" name="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
 
 
      <script src="script.js"></script>
