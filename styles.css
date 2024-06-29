@@ -442,3 +442,30 @@ button:hover {
         scroll-snap-align: start; 
     }
 }
+
+
+/* Special Offers Section  */
+
+.special-offers {
+    background: #f5f5f5;
+    text-align: center;
+    color: #c08c2a;
+}
+
+.offer img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.details-button1 {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #998766;
+    border: none;
+    width: 20%;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
