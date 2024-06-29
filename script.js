@@ -6,4 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.toggle('active');
     navMenu.classList.toggle('active'); 
   });
-});
+
+   // Sliding cards functionality
+   const cardsContainer = document.querySelector('.cards-container');
+   let cards = document.querySelectorAll('.card');
+
+   function slideCards() {
+       const firstCard = cards[0];
+       cardsContainer.appendChild(firstCard);
+       cards = document.querySelectorAll('.card');
+       cardsContainer.classList.add('slide');
+       setTimeout(() => {
+           cardsContainer.classList.remove('slide');
+       }, 3000);
+   }
+
+   setInterval(slideCards, 3000);
+  });

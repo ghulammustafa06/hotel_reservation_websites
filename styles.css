@@ -352,11 +352,19 @@ button:hover {
 } 
 
 
-/* rooms suites section  */
+/* rooms suites section */
 .room-suites {
     text-align: center;
     padding: 50px 0;
     background-color: rgb(238, 229, 213);
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    color: #c08c2a;
+    font-size: 34px;
     position: relative;
 }
 
@@ -387,7 +395,6 @@ button:hover {
     border-radius: 0 0 10px 10px;
 }
 
-
 .Rooms {
     text-align: center;
     padding: 15px 0;
@@ -412,13 +419,4 @@ button:hover {
 
 .cards-container.slide .card {
     transform: translateX(-200%);
-}
-
-
-.section-title {
-    text-align: center;
-    padding: 30px 0;
-    color: #c08c2a;
-    font-size: 34px;
-    position: relative;
 }
