@@ -420,3 +420,25 @@ button:hover {
 .cards-container.slide .card {
     transform: translateX(-200%);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0 auto;
+        height: 470px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .card {
+        width: 200px;
+        flex: 0 0 auto;
+        margin-right: 20px;
+        scroll-snap-align: start; 
+    }
+}
