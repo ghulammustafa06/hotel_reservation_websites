@@ -367,6 +367,7 @@ button:hover {
     margin: 0 auto;
     max-width: 90%;
 }
+
 .card {
     background: white;
     border-radius: 10px;
@@ -413,3 +414,11 @@ button:hover {
     transform: translateX(-200%);
 }
 
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    color: #c08c2a;
+    font-size: 34px;
+    position: relative;
+}
