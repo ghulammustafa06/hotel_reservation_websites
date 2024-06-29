@@ -260,4 +260,15 @@ button:hover {
     background-repeat: no-repeat;
     position: relative;
     margin-top: 200px;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
