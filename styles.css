@@ -449,7 +449,6 @@ button:hover {
     padding: 40px 0;
     text-align: center;
     color: #c08c2a;
-    text-align: center;
 }
 
 .special-offers .section-title {
@@ -481,11 +480,6 @@ button:hover {
     box-shadow: 0 12px 8px rgba(0,0,0,0.2);
 }
 
-.offer:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 8px rgba(0,0,0,0.2);
-}
-
 .offer img {
     width: 100%;
     height: auto;
@@ -494,13 +488,11 @@ button:hover {
     aspect-ratio: 16 / 9;
 }
 
-.offer-title {
-    color: #1312119a;
-    padding: 15px 10px 0;
+.offer-title, .offer-details {
+    padding: 15px 10px;
 }
 
 .offer-details {
-    padding: 0 10px 15px;
     font-size: 14px;
     color: #666;
 }
@@ -523,7 +515,42 @@ button:hover {
 
 h1 {
     text-align: center;
-    margin: 20px 0; */
+    margin: 20px 0;
     font-size: 2.5em;
-} 
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .offer-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0 auto;
+        height: 430px;
+        padding: 10px 0; 
+    }
+
+    .offer {
+        width: 200px; 
+        flex: 0 0 auto; 
+        height: 400px; 
+    }
+    
+    .details-button1 {
+        width: 50%; 
+
+    }
+
+    .section-title {
+        font-size: 1.7em; 
+        padding: 0 5px;
+    }
+
+    .offer img {
+        width: 100%; 
+        height: 220px; 
+    }
+}
