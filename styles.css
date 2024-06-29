@@ -75,8 +75,11 @@ nav img {
 }
 
 .stars i {
-    color: rgba(247, 240, 240, 0.671);
-    font-size: 24px; 
+    color: #B4934C;
+    font-size: 24px;
+    padding: 5px; 
+    text-shadow: -1px -1px 0 #ffffff79, 1px -1px 0 #ffffff79, -1px 1px 0 #ffffff79, 1px 1px 0 #ffffff79;
+
 }
 
 .heading {
@@ -246,4 +249,15 @@ button:hover {
 .menu-btn.active .menu-btn__burger::after {
     transform: translateY(-8px) rotate(-45deg);
     background-color: yellow;
+}
+
+/* Second Page Start Here  */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 200px;
 }
