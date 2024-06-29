@@ -272,3 +272,24 @@ button:hover {
     width: 45%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.text h6 {
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    color: #B4934C;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.text p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
