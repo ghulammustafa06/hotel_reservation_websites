@@ -644,3 +644,29 @@ video {
 .hide {
     display: none;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-tour {
+        height: auto;
+        padding: 20px;
+    }
+
+    .video-container {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .video-frame {
+        height: auto;
+    }
+
+    .overlay h2 {
+        font-size: 1.5em;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+}
