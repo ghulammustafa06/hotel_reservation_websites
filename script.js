@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
 
-
+  // Sliding cards functionality for activities page 
 document.addEventListener('DOMContentLoaded', function() {
     const activitiesCardsContainer = document.querySelector('.activities .card-container');
     let activitiesCards = document.querySelectorAll('.activities .card');
@@ -73,6 +73,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         updateActiveIndicator(0); 
     }
+
+        // Function to move to a specific card
+        function moveToCard(index) {
+            const selectedCard = activitiesCards[index];
+            activitiesCardsContainer.insertBefore(selectedCard, activitiesCardsContainer.firstChild);
+            activitiesCards = document.querySelectorAll('.activities .card'); 
+            updateActiveIndicator(index);
+        }
+    
+        function updateActiveIndicator(currentIndex) {
+            const indicators = document.querySelectorAll('.slide-bar-indicator');
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
 
     function slideActivitiesCards() {
         if (activitiesCards.length > 0) {
