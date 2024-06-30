@@ -760,6 +760,34 @@ video {
 }
 
 
+.activities .card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+
+.slide-bar-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slide-bar-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 70px;
+    transition: background-color 0.5s ease; /* Add this line */
+}
+
+.slide-bar-indicator.active {
+    background-color: #333;
+    transition: background-color 0.5s ease; /* Add this line for consistency */
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
