@@ -360,7 +360,7 @@ button:hover {
     position: relative;
 }
 
-.section-title {
+.section-title-rooms {
     text-align: center;
     padding: 30px 0;
     color: #c08c2a;
@@ -451,7 +451,7 @@ button:hover {
     color: #c08c2a;
 }
 
-.special-offers .section-title {
+.special-offers .section-title-offers {
     color: #333;
     margin-bottom: 30px;
 }
@@ -544,7 +544,7 @@ h1 {
 
     }
 
-    .section-title {
+    .section-title-offers {
         font-size: 1.7em; 
         padding: 0 5px;
     }
@@ -678,15 +678,18 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    padding: 0 50px 20px;
 }
 
 .card,
 .offer {
-    width: 300px;
+    width: 310px; 
+    height: 250px; 
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 0px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -700,15 +703,58 @@ video {
 .icon {
     width: 40px;
     height: 40px;
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.section-title {
+.section-title-activities {
     text-align: center;
-    padding: 30px 0;
+    padding: 8px 0;
     color: #c08c2a;
+    margin-top: 70px;
+    font-size: 30px;
     position: relative;
 }
 
+.ActivitiesDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #00000096;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.ActivitiesTittle {
+    text-align: center;
+    padding: 8px 0;
+    color: #0000008a;
+    position: relative;
+}
+
+.tennis {
+    background-image: url('Assets/svg/tennis.svg');
+}
+
+.equitation {
+    background-image: url('Assets/svg/horse.svg');
+}
+
+.pingpong {
+    background-image: url('Assets/svg/PingPong.svg');
+}
+
+.billiard {
+    background-image: url('Assets/svg/billiards.svg');
+}
+
+.flipper {
+    background-image: url('Assets/svg/flipper.svg');
+}
+
+.babyfoot {
+    background-image: url('Assets/svg/baby-foot.svg');
+}
