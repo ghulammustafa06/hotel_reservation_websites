@@ -38,3 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
             cardsContainer.classList.remove('slide');
         }, 3000);
     }
+    setInterval(slideCards, 3000);
+
+
+        // Video overlay functionality
+        const video = document.getElementById('video');
+        const overlay = document.getElementById('overlay');
+        const playButton = document.getElementById('play-button');
+    
+        video.addEventListener('play', function () {
+            overlay.style.display = 'none';
+            playButton.style.display = 'none';
+        });

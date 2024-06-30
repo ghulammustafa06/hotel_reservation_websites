@@ -564,8 +564,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
+    padding: 100px 0px;
 }
+
 
 .video-container {
     position: relative;
@@ -639,3 +641,6 @@ video {
     border-color: transparent transparent transparent white;
 }
 
+.hide {
+    display: none;
+}
