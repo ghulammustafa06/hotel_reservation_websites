@@ -670,3 +670,45 @@ video {
         height: 60px;
     }
 }
+
+/* ------------- Activities Section ---------- */
+
+.card-container,
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card,
+.offer {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover,
+.offer:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    color: #c08c2a;
+    position: relative;
+}
+
