@@ -38,5 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
             cardsContainer.classList.remove('slide');
         }, 3000);
     }
- 
-    setInterval(slideCards, 3000);
