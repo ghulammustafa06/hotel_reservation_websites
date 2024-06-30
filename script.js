@@ -52,23 +52,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const activitiesCardsContainer = document.querySelector('.activities .card-container');
     let activitiesCards = document.querySelectorAll('.activities .card');
+    const slideBarContainer = document.createElement('div');
+    slideBarContainer.className = 'slide-bar-container';
+    document.body.appendChild(slideBarContainer);
+
+    function generateSlideBarIndicators() {
+        activitiesCards.forEach((_, index) => {
+            const indicator = document.createElement('span');
+            indicator.className = 'slide-bar-indicator';
+            indicator.dataset.index = index;
+            slideBarContainer.appendChild(indicator);
+
+            indicator.addEventListener('click', () => {
+                moveToCard(index);
+            });
+        });
+        updateActiveIndicator(0); 
+    }
 
     function slideActivitiesCards() {
         if (activitiesCards.length > 0) {
-            const firstActivityCard = activitiesCards[0];
-            activitiesCardsContainer.appendChild(firstActivityCard);
+            const lastActivityCard = activitiesCards[activitiesCards.length - 1];
+            activitiesCardsContainer.insertBefore(lastActivityCard, activitiesCardsContainer.firstChild);
             activitiesCards = document.querySelectorAll('.activities .card');
             activitiesCardsContainer.classList.add('slide-activities');
             setTimeout(() => {
                 activitiesCardsContainer.classList.remove('slide-activities');
-            }, 300);
+            }, 500);
+            const newActiveIndex = Array.from(activitiesCards).indexOf(lastActivityCard);
+            updateActiveIndicator(newActiveIndex);
         }
     }
 
     if (activitiesCardsContainer && activitiesCards.length > 0) {
-        setInterval(slideActivitiesCards, 3000);
+        generateSlideBarIndicators();
+        setInterval(slideActivitiesCards, 5000);
     }
 });

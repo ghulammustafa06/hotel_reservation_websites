@@ -760,7 +760,6 @@ video {
 }
 
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
@@ -770,8 +769,8 @@ video {
         flex-direction: row;
         align-items: center;
         overflow-x: auto;
-        overflow-y: hidden;
         width: 100%;
+        overflow-y: hidden;
         margin: 0 auto;
         height: 420px;
         padding: 10px 0;
