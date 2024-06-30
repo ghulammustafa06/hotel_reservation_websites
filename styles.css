@@ -758,3 +758,33 @@ video {
 .babyfoot {
     background-image: url('Assets/svg/baby-foot.svg');
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .card-container,
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .offer {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .ActivitiesDescription {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ActivitiesTittle {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
