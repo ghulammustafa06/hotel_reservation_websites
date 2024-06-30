@@ -759,19 +759,31 @@ video {
     background-image: url('Assets/svg/baby-foot.svg');
 }
 
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
     .card-container,
     .offer-container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0 auto;
+        height: 420px;
+        padding: 10px 0;
+        
     }
 
     .card,
     .offer {
-        width: 90%;
-        margin-bottom: 20px;
+        scroll-snap-align: start;
+        width: 200px; 
+        flex: 0 0 auto; 
+        height: 400px; 
     }
 
     .ActivitiesDescription {
@@ -780,11 +792,14 @@ video {
     }
 
     .ActivitiesTittle {
-        font-size: 1.5em;
+                font-size: 1.7em; 
+        padding: 0 5px;
     }
 
     .icon {
         width: 30px;
         height: 30px;
     }
+    
 }
+

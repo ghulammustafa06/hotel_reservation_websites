@@ -50,3 +50,25 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.style.display = 'none';
             playButton.style.display = 'none';
         });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const activitiesCardsContainer = document.querySelector('.activities .card-container');
+    let activitiesCards = document.querySelectorAll('.activities .card');
+
+    function slideActivitiesCards() {
+        if (activitiesCards.length > 0) {
+            const firstActivityCard = activitiesCards[0];
+            activitiesCardsContainer.appendChild(firstActivityCard);
+            activitiesCards = document.querySelectorAll('.activities .card');
+            activitiesCardsContainer.classList.add('slide-activities');
+            setTimeout(() => {
+                activitiesCardsContainer.classList.remove('slide-activities');
+            }, 300);
+        }
+    }
+
+    if (activitiesCardsContainer && activitiesCards.length > 0) {
+        setInterval(slideActivitiesCards, 3000);
+    }
+});
