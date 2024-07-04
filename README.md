@@ -76,7 +76,7 @@ This is the official website for Joya Paradise Hotel, designed to offer an engag
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/joya-paradise-hotel.git
+   git clone git@github.com:ghulammustafa06/hotel_reservation_websites.git
    ```
 2. Open `index.html` in your web browser to view the website.
 
