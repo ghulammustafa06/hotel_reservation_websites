@@ -666,8 +666,7 @@ video {
     }
 
     .play-button {
-        width: 60px;
-        height: 60px;
+       display: none;
     }
 }
 
@@ -760,73 +759,75 @@ video {
 }
 
 
-.activities .card-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-
-.slide-bar-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.slide-bar-indicator {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #ccc;
-    margin: 0 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-bottom: 70px;
-    transition: background-color 0.5s ease; /* Add this line */
-}
-
-.slide-bar-indicator.active {
-    background-color: #333;
-    transition: background-color 0.5s ease; /* Add this line for consistency */
-}
 /* Responsive adjustments */
 @media (max-width: 768px) {
-
     .card-container,
     .offer-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        overflow-x: auto;
-        width: 100%;
-        overflow-y: hidden;
-        margin: 0 auto;
-        height: 420px;
-        padding: 10px 0;
-        
+        padding: 0 20px 20px; 
     }
 
     .card,
     .offer {
-        scroll-snap-align: start;
-        width: 200px; 
-        flex: 0 0 auto; 
-        height: 400px; 
+        width: 260px;
     }
 
-    .ActivitiesDescription {
-        flex-direction: column;
-        text-align: center;
-    }
-
+    .section-title-activities,
     .ActivitiesTittle {
-                font-size: 1.7em; 
-        padding: 0 5px;
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container,
+    .offer-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card,
+    .offer {
+        width: 90%; 
+        margin: 10px 0; 
     }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 35px; 
+        height: 35px;
     }
-    
+
+    .section-title-activities,
+    .ActivitiesTittle {
+        font-size: 20px; 
+    }
+
+    .ActivitiesDescription {
+        flex-direction: column; 
+        text-align: center; 
+    }
 }
 
+/* !-- Restaurant & Bar Section */
+
+.restaurant-bar {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.restaurant-bar-image {
+    width: 55%;
+    margin-right: 20px;
+}
+
+.restaurant-bar-content {
+    width: 100%;
+}
+
+.restaurant-bar-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #c08c2a;
+}

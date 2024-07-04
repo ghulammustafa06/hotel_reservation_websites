@@ -73,42 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         updateActiveIndicator(0); 
     }
-
-        // Function to move to a specific card
-        function moveToCard(index) {
-            const selectedCard = activitiesCards[index];
-            activitiesCardsContainer.insertBefore(selectedCard, activitiesCardsContainer.firstChild);
-            activitiesCards = document.querySelectorAll('.activities .card'); 
-            updateActiveIndicator(index);
-        }
-    
-        function updateActiveIndicator(currentIndex) {
-            const indicators = document.querySelectorAll('.slide-bar-indicator');
-            indicators.forEach((indicator, index) => {
-                if (index === currentIndex) {
-                    indicator.classList.add('active');
-                } else {
-                    indicator.classList.remove('active');
-                }
-            });
-        }
-
-    function slideActivitiesCards() {
-        if (activitiesCards.length > 0) {
-            const lastActivityCard = activitiesCards[activitiesCards.length - 1];
-            activitiesCardsContainer.insertBefore(lastActivityCard, activitiesCardsContainer.firstChild);
-            activitiesCards = document.querySelectorAll('.activities .card');
-            activitiesCardsContainer.classList.add('slide-activities');
-            setTimeout(() => {
-                activitiesCardsContainer.classList.remove('slide-activities');
-            }, 500);
-            const newActiveIndex = Array.from(activitiesCards).indexOf(lastActivityCard);
-            updateActiveIndicator(newActiveIndex);
-        }
-    }
-
-    if (activitiesCardsContainer && activitiesCards.length > 0) {
-        generateSlideBarIndicators();
-        setInterval(slideActivitiesCards, 5000);
-    }
 });
