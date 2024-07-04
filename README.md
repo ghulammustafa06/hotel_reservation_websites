@@ -1,6 +1,6 @@
-# Hotel Resveration
+# Hotel Restoration
 
-Welcome to the Hotel Resveration Website project repository! This project aims to create a user-friendly website for Hotel Resveration, where visitors can easily explore room availability, pricing, and services offered by the hotel.
+Welcome to the Hotel Resveration Website project repository! This project aims to create a user-friendly website for Hotel Reservations, where visitors can easily explore room availability, pricing, and services offered by the hotel.
 
 ## Table of Contents
 
