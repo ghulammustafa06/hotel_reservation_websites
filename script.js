@@ -50,8 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.style.display = 'none';
             playButton.style.display = 'none';
         });
-
-
+        
   // Sliding cards functionality for activities page 
 document.addEventListener('DOMContentLoaded', function() {
     const activitiesCardsContainer = document.querySelector('.activities .card-container');
@@ -74,3 +73,28 @@ document.addEventListener('DOMContentLoaded', function() {
         updateActiveIndicator(0); 
     }
 });
+
+  // Image carousel functionality
+  const images = $(".thumbnail");
+  const mainImage = $("#current-image");
+  let currentIndex = 0;
+
+  function showImage(index) {
+      const newSrc = $(images[index]).attr("src");
+      mainImage.attr("src", newSrc);
+      images.removeClass("active");
+      $(images[index]).addClass("active");
+  }
+
+  function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }
+
+  images.click(function () {
+      currentIndex = images.index(this);
+      showImage(currentIndex);
+  });
+
+  setInterval(nextImage, 2000);
+  showImage(currentIndex);

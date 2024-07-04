@@ -948,3 +948,28 @@ video {
     letter-spacing: 0.1em;
 }
 
+@media (max-width: 768px) {
+    .gallery-container {
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .thumbnail-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail-images img {
+        width: 60px;
+        margin: 10px 0;
+    }
+
+    .h2gallery {
+        font-size: 1.5em;
+    }
+}
