@@ -900,3 +900,51 @@ video {
         padding: 10px;
     }
 }
+
+/*  <!-- GALLERY SECTION -->  */
+
+.gallery-container {
+    position: relative;
+    width: 40%;
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.thumbnail-images img.active {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.h2gallery {
+    text-align: center;
+    font-size: 2em;
+    color: #c08c2a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
