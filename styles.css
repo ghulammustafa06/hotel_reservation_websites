@@ -811,7 +811,7 @@ video {
 .restaurant-bar {
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 90px;
     background-color: #fff;
 }
 
@@ -830,4 +830,73 @@ video {
     margin-top: 40px;
     text-align: center;
     color: #c08c2a;
+}
+
+.restaurant-bar-content p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.details-button {
+    display: block;
+    width: 60%;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+.container-box {
+    position: absolute;
+    right: 30px;
+    left: 500px;
+    width: 450px;
+    height: 470px;
+    margin-top: 170px;
+    background-color: rgb(247, 245, 245);
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .restaurant-bar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .restaurant-bar-image,
+    .restaurant-bar-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .restaurant-bar-content h2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .restaurant-bar-content p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .details-button {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .container-box {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
 }
