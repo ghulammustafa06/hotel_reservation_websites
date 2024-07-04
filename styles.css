@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 0;
     background-color: black;
-} 
+}
 
 nav {
     display: flex;
@@ -50,11 +50,13 @@ nav a {
     color: aliceblue;
     text-decoration: none;
 }
+
 nav img {
     width: 225px;
     height: 225px;
     margin-top: 43px;
 }
+
 .nav-links {
     display: flex;
     justify-content: space-between;
@@ -77,7 +79,7 @@ nav img {
 .stars i {
     color: #B4934C;
     font-size: 24px;
-    padding: 5px; 
+    padding: 5px;
     text-shadow: -1px -1px 0 #ffffff79, 1px -1px 0 #ffffff79, -1px 1px 0 #ffffff79, 1px 1px 0 #ffffff79;
 
 }
@@ -148,61 +150,75 @@ button:hover {
 
 /* Responsive adjustments */
 .menu-btn {
-    display: none; 
+    display: none;
 }
 
 @media (max-width: 1260px) {
     nav {
-        padding: 0 4rem; 
+        padding: 0 4rem;
     }
-    .nav-links, .logo {
-        display: none; 
+
+    .nav-links,
+    .logo {
+        display: none;
     }
 
     .nav-links.active {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 130px;
         z-index: 1000;
     }
+
     .nav-links a {
-        margin: 2px 0;     }
-    .heading {
-        font-size: 3rem; 
+        margin: 2px 0;
     }
+
+    .heading {
+        font-size: 3rem;
+    }
+
     .form-container {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 20px;
     }
+
     form {
         flex-direction: column;
     }
+
     .form-group {
-        margin: 10px 0; 
+        margin: 10px 0;
     }
+
     .menu-btn {
-        display: inline-block; 
+        display: inline-block;
     }
 }
 
 @media (max-width: 480px) {
     nav {
-        padding: 01 2rem; 
+        padding: 01 2rem;
         flex-direction: row;
     }
+
     .stars i {
-    display: none;
+        display: none;
     }
+
     .heading {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
         padding-left: 20px;
-        letter-spacing: 7px; 
+        letter-spacing: 7px;
         text-align: center;
     }
-    button, input[type="date"], select {
-        padding: 12px; 
-        font-size: 11px; 
+
+    button,
+    input[type="date"],
+    select {
+        padding: 12px;
+        font-size: 11px;
     }
 }
 
@@ -239,7 +255,7 @@ button:hover {
 }
 
 .menu-btn.active .menu-btn__burger {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .menu-btn.active .menu-btn__burger::before {
@@ -315,7 +331,7 @@ button:hover {
 
 /* Responsive adjustments */
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -349,7 +365,7 @@ button:hover {
         line-height: 1.4;
         margin-bottom: 10px;
     }
-} 
+}
 
 
 /* rooms suites section */
@@ -439,7 +455,7 @@ button:hover {
         width: 200px;
         flex: 0 0 auto;
         margin-right: 20px;
-        scroll-snap-align: start; 
+        scroll-snap-align: start;
     }
 }
 
@@ -465,30 +481,31 @@ button:hover {
 
 .offer {
     background-color: #fff;
-    box-shadow: 0 12px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     width: calc(25% - 20px);
     max-width: 300px;
     min-width: 250px;
     height: 370px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .offer:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
 }
 
 .offer img {
     width: 100%;
     height: auto;
-    padding: 19px  19px 0 19px;
+    padding: 19px 19px 0 19px;
     border-radius: 10px 10px 0 0;
     aspect-ratio: 16 / 9;
 }
 
-.offer-title, .offer-details {
+.offer-title,
+.offer-details {
     padding: 15px 10px;
 }
 
@@ -530,28 +547,28 @@ h1 {
         width: 100%;
         margin: 0 auto;
         height: 430px;
-        padding: 10px 0; 
+        padding: 10px 0;
     }
 
     .offer {
-        width: 200px; 
-        flex: 0 0 auto; 
-        height: 400px; 
+        width: 200px;
+        flex: 0 0 auto;
+        height: 400px;
     }
-    
+
     .details-button1 {
-        width: 50%; 
+        width: 50%;
 
     }
 
     .section-title-offers {
-        font-size: 1.7em; 
+        font-size: 1.7em;
         padding: 0 5px;
     }
 
     .offer img {
-        width: 100%; 
-        height: 220px; 
+        width: 100%;
+        height: 220px;
     }
 }
 
@@ -622,22 +639,23 @@ video {
 }
 
 .play-button {
-    position: relative; 
+    position: relative;
     background: transparent;
 }
 
 .play-button:hover {
     cursor: pointer;
 }
+
 .play-button::before {
     content: "";
     position: absolute;
-    left: 35%; 
+    left: 35%;
     top: 25%;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 15px 0 15px 26px; 
+    border-width: 15px 0 15px 26px;
     border-color: transparent transparent transparent white;
 }
 
@@ -666,7 +684,7 @@ video {
     }
 
     .play-button {
-       display: none;
+        display: none;
     }
 }
 
@@ -683,8 +701,8 @@ video {
 
 .card,
 .offer {
-    width: 310px; 
-    height: 250px; 
+    width: 310px;
+    height: 250px;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 30px;
@@ -761,9 +779,10 @@ video {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
     .card-container,
     .offer-container {
-        padding: 0 20px 20px; 
+        padding: 0 20px 20px;
     }
 
     .card,
@@ -773,36 +792,37 @@ video {
 
     .section-title-activities,
     .ActivitiesTittle {
-        font-size: 24px; 
+        font-size: 24px;
     }
 }
 
 @media (max-width: 480px) {
+
     .card-container,
     .offer-container {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .card,
     .offer {
-        width: 90%; 
-        margin: 10px 0; 
+        width: 90%;
+        margin: 10px 0;
     }
 
     .icon {
-        width: 35px; 
+        width: 35px;
         height: 35px;
     }
 
     .section-title-activities,
     .ActivitiesTittle {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .ActivitiesDescription {
-        flex-direction: column; 
-        text-align: center; 
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -976,7 +996,6 @@ video {
 
 /*  <!-- CONTACT SECTION -->  */
 /* <!-- Footer Section -->  */
-
 footer {
     background-color: #000;
     color: #fff;
