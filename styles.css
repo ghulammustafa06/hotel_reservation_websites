@@ -973,3 +973,73 @@ video {
         font-size: 1.5em;
     }
 }
+
+/*  <!-- CONTACT SECTION -->  */
+/* <!-- Footer Section -->  */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    width: 160px;
+}
+
+.footerTittle {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+
+.footerDetails {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.8;
+}
+
+.social-media a img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+
+.footer-navigation a:last-child {
+    border-right: none;
+}
+
+.footer-navigation a:hover {
+    color: #c08c2a;
+}
+
+.footer-bottom {
+    background-color: #1111117a;
+    padding: 10px 0;
+    color: #ffffff4f;
+    margin-top: 20px;
+}
