@@ -1,63 +1,20 @@
+[![Try Out](https://github.com/codespaces/badge.svg)](https://ghulammustafa06.github.io/hotel_reservation_websites/)
+
 # Hotel Reservation
 
-Welcome to the Hotel Resveration Website project repository! This project aims to create a user-friendly website for Hotel Reservations, where visitors can easily explore room availability, pricing, and services offered by the hotel.
+ Heyyy! This is the Hotel Resveration Website, this project aims to create a user-friendly website for Hotel Reservations, where visitors can easily explore room availability, pricing, and services offered by the hotel.
 
-## Table of Contents
+ ![JavaScriptweb application](https://github.com/user-attachments/assets/9c97e0bf-f3d7-4833-9819-6c19e6242cfb)
 
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-This is the official website for Joya Paradise Hotel, designed to offer an engaging and informative user experience. Visitors can explore hotel amenities, book rooms, view special offers, and much more.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (jQuery)
-- Font Awesome (for icons)
 - External Libraries:
   - jQuery: [https://jquery.com/](https://jquery.com/)
   - Font Awesome: [https://fontawesome.com/](https://fontawesome.com/)
-
-## Project Structure
-
-```
-.
-├── index.html
-├── styles.css
-├── script.js
-├── Assets
-│   ├── Images
-│   │   ├── background-img.jpg
-│   │   ├── logo.png
-│   │   ├── fourStar.png
-│   │   ├── chairTable.jpg
-│   │   ├── card1.jpg
-│   │   ├── card2.jpg
-│   │   ├── card3.jpg
-│   │   ├── card4.jpg
-│   │   ├── card5.jpg
-│   │   ├── s1.jpg
-│   │   ├── s2.jpg
-│   │   ├── s3.jpg
-│   │   ├── s4.jpg
-│   │   ├── restaurant.jpg
-│   │   ├── gallaryPic1.jpg
-│   │   ├── gallaryPic2.jpg
-│   │   ├── gallaryPic3.jpg
-│   │   ├── gallaryPic4.jpg
-│   │   ├── gallaryPic5.jpg
-│   │   ├── Updatedlogo.png
-│   └── Videos
-│       └── video1.mp4
-```
 
 ## Features
 
@@ -78,8 +35,7 @@ This is the official website for Joya Paradise Hotel, designed to offer an engag
    ```bash
    git clone git@github.com:ghulammustafa06/hotel_reservation_websites.git
    ```
-2. Open `index.html` in your web browser to view the website.
-
+   
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
