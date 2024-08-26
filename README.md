@@ -1,6 +1,6 @@
-[![Try Out](https://github.com/codespaces/badge.svg)](https://ghulammustafa06.github.io/hotel_reservation_websites/)
+[![Try Out](https://github.com/ghulammustafa06/hotel_reservation_websites/blob/main/Assets/Images/repo-img.png)](https://ghulammustafa06.github.io/hotel_reservation_websites/)
 
-# Hotel Reservation
+# Hotel Reservation  Assets/Images
 
  Heyyy! This is the Hotel Resveration Website, this project aims to create a user-friendly website for Hotel Reservations, where visitors can easily explore room availability, pricing, and services offered by the hotel.
 
